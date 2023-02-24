@@ -1,0 +1,23 @@
+Merge sort Projesi:
+
+SORU: [16,21,11,8,12,22] -> Merge Sort
+
+      1 : Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+      2: Big-O gösterimini yazınız.
+       
+CEVAP 1 :     Merge sort türüne göre bütün elemanları tek eleman kalacak şekilde ikiye bölerek sonuca ulaşırız.
+
+1:                    [16,21,11,8,12,22]
+2:                 [16,21,11]     [8,12,22]
+3:              [16]  [21,11]     [8]   [12,22]
+4:           [16]  [21]  [11]     [8]   [12]   [22]           // Bütün sayıları tek elemana böldük. Artık sıralama ve merge işlemini yapabiliriz.
+5:              [16]  [11,21]     [8]  [12,22]
+6:                  [11,16,21]   [8,12,22]
+7:                    [8,11,12,16,21,22]
+
+
+CEVAP 2 :     Big-O gösterimi şu şekildedir:
+              2^x=n   kadar işlem yapılmıştır. Bu da bize:
+              logn=x   durumunu verir bu durumda:
+              o(nlogn) olarak hesaplanır.
+              
